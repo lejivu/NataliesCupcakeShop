@@ -8,7 +8,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace NataliesCupcakeShop.Controllers
 {
-    [Authorize(Roles = "Admin")]
+    //[Authorize(Roles = "Admin")]
     public class RoleController : Controller
     {
         private RoleManager<IdentityRole> roleManager;
