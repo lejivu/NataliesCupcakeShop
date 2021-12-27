@@ -1,10 +1,10 @@
 ﻿namespace NataliesCupcakeShop.Data.Entities
 {
-    public class Order
+    public class OrderContract
     {
-        public string orderId { get; set; }
+        public string orderContractId { get; set; }
         public DateTime orderDate { get; set; }
         public string orderNumber { get; set; }
-        public ICollection<OrderItem> items { get; set; }
+        public ICollection<OrderItemContract> items { get; set; }
     }
 }

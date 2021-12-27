@@ -1,0 +1,33 @@
+﻿@using NataliesCupcakeShop.Data.Entities
+@model UserContract
+
+<form asp-route="/Home/Edit" method="post"> 
+    <div class="form-group">
+        <label asp-for="FirstName"></label>
+        <input asp-for="FirstName" class="form-control" required/>
+    </div>
+    <div class="form-group">
+        <label asp-for="LastName"></label>
+        <input asp-for="LastName" class="form-control" required/>
+    </div>
+    <div class="form-group">
+        <label asp-for="DateOfBirth"></label>
+        <input asp-for="DateOfBirth" class="form-control" required/>
+    </div>
+    <div class="form-group">
+        <label asp-for="ZipCode"></label>
+        <input asp-for="ZipCode" class="form-control" required/>
+    </div>
+    <div class="form-group">
+        <label asp-for="Country"></label>
+        <input asp-for="Country" class="form-control" required/>
+    </div>
+        <div class="form-group">
+        <label asp-for="Email"></label>
+        <input asp-for="Email" class="form-control" required/>
+    </div>
+    <div>
+        <a type="button" asp-action="Index" class="btn btn-secondary">Cancel</a>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+</form>
